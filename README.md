@@ -32,6 +32,10 @@ ABACUS에서 다운받은 예측파일을 스코어보드 제출용 형식으로
 
 ## 데이터 (Data)
 모델링과 스코어보드 셋팅을 위한 수정된 데이터
+* train_all.csv, test_all.csv : train, test set
+* test_y.csv : 스코어보드 제출용 정답 파일
 
 ## 결과데이터 (Result)
 모델링의 예측 결과 데이터
+* predict_D_xgb_batch_included.csv : ABACUS batch prediction 결과(xgb 알고리즘)와 원래의 test set이 합쳐진 형태의 데이터
+* 201022_xgb_predict_y: 최적의 cutoff를 기준으로 분류한 y값만 저장한 데이터 > 스코어보드에 제출하여 점수를 채점 받음
